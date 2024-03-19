@@ -1,0 +1,502 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin sans',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    background: #fdb9d0;
+
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #560955;
+    margin-right: 40px;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+}
+.nav-bar ul li a{
+    display: block;
+    color: #560955;
+    font-size: 20px;
+    padding: 8px 25px;
+    transition: .2s;
+    margin: 0 5px;
+    text-decoration: none;
+}
+.nav-bar ul li:hover a{
+    background-color: #9b1ca7;
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.contnt{
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h2{
+    color: black;
+    font-size: 40px;
+    margin: 20px 0px 20px;
+
+}
+h3{
+    color: darkgreen;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: black;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+p{
+    color: black;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.hero{
+    height: 90vh;
+    width: 100%;
+    background-color: #fddae6;
+}
+
+.about{
+    height: 100vh;
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #e1fdfd;
+}
+.about img{
+    height: 300px;
+    width: 490px;
+    border-radius: 20px 0 20px 0;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about h2{
+    color: black;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.about-text p{
+    color: #3c335d;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.about-text h3{
+    color: black;
+}
+.about-text{
+    width: 500px;
+}
+
+.course{
+    height: 100vh;
+    width: 100%;
+    padding: 100px 0px;
+    
+    background-color: #fddae6;
+}
+.course h3{
+    font-size: 30px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: -8px;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    width: 650px;
+    height: 320px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+
+.course h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    
+}
+.course h4 {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.course ul {
+    list-style-type: none;
+    padding: 40px;
+}
+
+.course li {
+    margin-bottom: 1rem;
+}
+
+.course ul li::before {
+    content: "• ";
+    color: black;
+}
+
+.course p{
+   padding: 30px 100px 10px 100px;
+   font-size: 20px;
+   color: darkblue;
+}
+
+.hero .cta {
+    width: 200px;
+    display: flex;
+    text-align: center;
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 1rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 2rem;
+    
+    margin-bottom: 5px;
+}
+
+.hero .cta:hover {
+    background-color: #0056b3;
+}
+
+.contact{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background: #fddae6;
+}
+.contact-info,.contact-form{
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+    text-align: center;
+    color: #460846;
+    font-size: 25px;
+}
+.contact-info h2{
+    font-size: 24px;
+    color: black;
+    margin-top: 20px;
+    
+}
+.contact-info p{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: lightslategrey;
+}
+.contact-info p strong {
+    color: #460846;
+}
+.contact-form h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+}
+.contact-form form{
+    text-align: center;
+}
+.contact-form label, .contact-form input, .contact-form textarea, .contact-form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.contact-form button{
+    background-color: #213032;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    transform:.4s;
+    padding: 10px 10px 10px 10px;
+}
+.message{
+    width: 200px;
+    height: 100px;
+}
+.contact-form button:hover{
+    background-color: #97a2a3;
+    color: #213032;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.contact-form label{
+    text-align: left;
+    color: #460846;
+    font-family: ariel;
+    font-size: 20px;
+}
+.contact-form input, .contact-form textarea{
+    padding: 8px;
+}
+.contact-info p{
+    padding: 15px;
+}
+
+.section__container {
+    height: 110vh;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  background-color: #e1fdfd;
+
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header p {
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.header h1 {
+  font-family: "Noto Serif", serif;
+  font-size: 2rem;
+  font-weight: 900;
+
+}
+
+.testimonials__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 5rem;
+  margin-right: 40px;
+
+}
+
+.cards {
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  background-color: lightsalmon;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-bottom: 2.5rem;
+  margin-inline: 1.5rem;
+
+}
+
+.cards i {
+  font-size: 2.5rem;
+  color: gold;
+}
+
+.cards p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cards hr {
+  width: 40px;
+  margin: auto;
+  color: var(--text-light);
+}
+
+
+
+.cards .name {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.cards .name:hover {
+  color: white;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+}
+.social-icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    color: #97a2a3;
+    text-align: center;
+    line-height:40px;
+    font-size: 38px;
+}
+.social-icon:hover{
+    color: #314e52;
+    cursor: pointer;
+}
+.bottom a{
+    font-size: 20px;
+    color: whitesmoke;
+    display: flex;
+    text-align: center;
+    margin-top: -10px;
+} 
+.cat-1 a{
+    color: white;
+}
+
+footer{
+    padding: 20px 0;
+    background: #182f32;
+}
+footer h5{
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+    color: #97a2a3;
+}
+
+.container{
+    min-height: 100vh;
+    background: #08071d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("bg.png") no-repeat center center/cover;
+}
+
+.container form{
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.container form h1{
+    color: black;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.container form input{
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+
+.container form input::placeholder{
+    color: lightslategrey;
+}
+
+.container form #lastName,
+.container form #mobile{
+    margin-left: 20px;
+}
+
+.container form h4{
+    color: lightslategrey;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 40px;
+}
+
+.container form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: black;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+
+
+.container form #button{
+    border: none;
+    background: #ed92a7;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    width: 150px;
+    padding: 0;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.container form #button:hover{
+    opacity: 0.7;
+    color: black;
+    background-color: #faf4a8;
+}
+
